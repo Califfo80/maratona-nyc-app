@@ -4,3 +4,6 @@ test-engine.js
 *.md
 .git
 *.zip
+calendario
+piano-json.js
+test-calendario.js

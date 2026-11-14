@@ -1,0 +1,2236 @@
+{
+ "inizio": "2026-11-16",
+ "gara": "2027-11-07",
+ "app": "https://corsa.ragazzodelcoaching.com",
+ "settimane": [
+  {
+   "n": 1,
+   "inizio": "2026-11-16",
+   "fine": "2026-11-22",
+   "fase": "Base",
+   "nota": "Se serve alterna 4' corsa e 1' cammino.",
+   "km": 16,
+   "sessioni": [
+    {
+     "data": "2026-11-17",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 5,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2026-11-19",
+     "giorno": "gio",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 5,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2026-11-22",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 6,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "inizio": "2026-11-23",
+   "fine": "2026-11-29",
+   "fase": "Base",
+   "nota": "",
+   "km": 17,
+   "sessioni": [
+    {
+     "data": "2026-11-24",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 5,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2026-11-26",
+     "giorno": "gio",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 5,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2026-11-29",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 7,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "inizio": "2026-11-30",
+   "fine": "2026-12-06",
+   "fase": "Base",
+   "nota": "",
+   "km": 19,
+   "sessioni": [
+    {
+     "data": "2026-12-01",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 6,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2026-12-03",
+     "giorno": "gio",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 5,
+     "descrizione": "facile + 4 allunghi",
+     "dettaglio": "facile + 4 allunghi"
+    },
+    {
+     "data": "2026-12-06",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 8,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "inizio": "2026-12-07",
+   "fine": "2026-12-13",
+   "fase": "Base",
+   "nota": "Scarico.",
+   "km": 15,
+   "sessioni": [
+    {
+     "data": "2026-12-08",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 5,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2026-12-10",
+     "giorno": "gio",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 4,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2026-12-13",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 6,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "inizio": "2026-12-14",
+   "fine": "2026-12-20",
+   "fase": "Base",
+   "nota": "",
+   "km": 21,
+   "sessioni": [
+    {
+     "data": "2026-12-15",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 6,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2026-12-17",
+     "giorno": "gio",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 6,
+     "descrizione": "facile + 6 allunghi",
+     "dettaglio": "facile + 6 allunghi"
+    },
+    {
+     "data": "2026-12-20",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 9,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "inizio": "2026-12-21",
+   "fine": "2026-12-27",
+   "fase": "Base",
+   "nota": "Natale: se salti una corsa, salta la più corta.",
+   "km": 22,
+   "sessioni": [
+    {
+     "data": "2026-12-22",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 6,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2026-12-24",
+     "giorno": "gio",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 6,
+     "descrizione": "facile + 6 allunghi",
+     "dettaglio": "facile + 6 allunghi"
+    },
+    {
+     "data": "2026-12-27",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 10,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "inizio": "2026-12-28",
+   "fine": "2027-01-03",
+   "fase": "Base",
+   "nota": "Scarico.",
+   "km": 17,
+   "sessioni": [
+    {
+     "data": "2026-12-29",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 5,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2026-12-31",
+     "giorno": "gio",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 5,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-01-03",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 7,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "inizio": "2027-01-04",
+   "fine": "2027-01-10",
+   "fase": "Base",
+   "nota": "Test 5 km: obiettivo 32:00 o meglio.",
+   "km": 19,
+   "sessioni": [
+    {
+     "data": "2027-01-05",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 6,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-01-07",
+     "giorno": "gio",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 5,
+     "descrizione": "facile + 4 allunghi",
+     "dettaglio": "facile + 4 allunghi"
+    },
+    {
+     "data": "2027-01-10",
+     "giorno": "dom",
+     "tipo": "test",
+     "titolo": "Test 5 km",
+     "km": 8,
+     "descrizione": "TEST 5 km (2 risc + 5 + 1)",
+     "dettaglio": "Riscaldamento 2 km, poi 5 km a tutta, poi 1 km di defaticamento."
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "inizio": "2027-01-11",
+   "fine": "2027-01-17",
+   "fase": "Costruzione",
+   "nota": "",
+   "km": 24,
+   "sessioni": [
+    {
+     "data": "2027-01-12",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 7,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-01-14",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 6,
+     "descrizione": "fartlek 6×1' svelto / 2' piano",
+     "dettaglio": "fartlek 6×1' svelto / 2' piano"
+    },
+    {
+     "data": "2027-01-17",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 11,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "inizio": "2027-01-18",
+   "fine": "2027-01-24",
+   "fase": "Costruzione",
+   "nota": "",
+   "km": 26,
+   "sessioni": [
+    {
+     "data": "2027-01-19",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 7,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-01-21",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 7,
+     "descrizione": "progressivo: ultimi 2 km a ritmo medio",
+     "dettaglio": "progressivo: ultimi 2 km a ritmo medio"
+    },
+    {
+     "data": "2027-01-24",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 12,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "inizio": "2027-01-25",
+   "fine": "2027-01-31",
+   "fase": "Costruzione",
+   "nota": "Si aggiunge la corsa del venerdì.",
+   "km": 30,
+   "sessioni": [
+    {
+     "data": "2027-01-26",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 7,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-01-28",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 7,
+     "descrizione": "fartlek 8×1' svelto / 2' piano",
+     "dettaglio": "fartlek 8×1' svelto / 2' piano"
+    },
+    {
+     "data": "2027-01-29",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 4,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-01-31",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 12,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "inizio": "2027-02-01",
+   "fine": "2027-02-07",
+   "fase": "Costruzione",
+   "nota": "Scarico. Si apre il sorteggio NYRR: iscriviti.",
+   "km": 25,
+   "sessioni": [
+    {
+     "data": "2027-02-02",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 6,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-02-04",
+     "giorno": "gio",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 6,
+     "descrizione": "facile + 6 allunghi",
+     "dettaglio": "facile + 6 allunghi"
+    },
+    {
+     "data": "2027-02-05",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 4,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-02-07",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 9,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "inizio": "2027-02-08",
+   "fine": "2027-02-14",
+   "fase": "Costruzione",
+   "nota": "",
+   "km": 33,
+   "sessioni": [
+    {
+     "data": "2027-02-09",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 7,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-02-11",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 8,
+     "descrizione": "3×6' a ritmo soglia, rec. 2'",
+     "dettaglio": "3×6' a ritmo soglia, rec. 2'"
+    },
+    {
+     "data": "2027-02-12",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 5,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-02-14",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 13,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "inizio": "2027-02-15",
+   "fine": "2027-02-21",
+   "fase": "Costruzione",
+   "nota": "",
+   "km": 35,
+   "sessioni": [
+    {
+     "data": "2027-02-16",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 8,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-02-18",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 8,
+     "descrizione": "3×8' a ritmo soglia, rec. 2'",
+     "dettaglio": "3×8' a ritmo soglia, rec. 2'"
+    },
+    {
+     "data": "2027-02-19",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 5,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-02-21",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 14,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "inizio": "2027-02-22",
+   "fine": "2027-02-28",
+   "fase": "Costruzione",
+   "nota": "",
+   "km": 37,
+   "sessioni": [
+    {
+     "data": "2027-02-23",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 8,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-02-25",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 9,
+     "descrizione": "6×3' a ritmo ripetute, rec. 2'",
+     "dettaglio": "6×3' a ritmo ripetute, rec. 2'"
+    },
+    {
+     "data": "2027-02-26",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 5,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-02-28",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 15,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "inizio": "2027-03-01",
+   "fine": "2027-03-07",
+   "fase": "Costruzione",
+   "nota": "Scarico. Esito sorteggio a marzo: se negativo, tour operator.",
+   "km": 28,
+   "sessioni": [
+    {
+     "data": "2027-03-02",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 6,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-03-04",
+     "giorno": "gio",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 7,
+     "descrizione": "facile + 6 allunghi",
+     "dettaglio": "facile + 6 allunghi"
+    },
+    {
+     "data": "2027-03-05",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 4,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-03-07",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 11,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "inizio": "2027-03-08",
+   "fine": "2027-03-14",
+   "fase": "Costruzione",
+   "nota": "",
+   "km": 38,
+   "sessioni": [
+    {
+     "data": "2027-03-09",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 8,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-03-11",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 9,
+     "descrizione": "2×12' a ritmo soglia, rec. 3'",
+     "dettaglio": "2×12' a ritmo soglia, rec. 3'"
+    },
+    {
+     "data": "2027-03-12",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 5,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-03-14",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 16,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "inizio": "2027-03-15",
+   "fine": "2027-03-21",
+   "fase": "Costruzione",
+   "nota": "",
+   "km": 39,
+   "sessioni": [
+    {
+     "data": "2027-03-16",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 8,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-03-18",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 9,
+     "descrizione": "5×1000 m a ritmo ripetute, rec. 2'30\"",
+     "dettaglio": "5×1000 m a ritmo ripetute, rec. 2'30\""
+    },
+    {
+     "data": "2027-03-19",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 6,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-03-21",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 16,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "inizio": "2027-03-22",
+   "fine": "2027-03-28",
+   "fase": "Costruzione",
+   "nota": "",
+   "km": 40,
+   "sessioni": [
+    {
+     "data": "2027-03-23",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 8,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-03-25",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 10,
+     "descrizione": "20' continui a ritmo soglia",
+     "dettaglio": "20' continui a ritmo soglia"
+    },
+    {
+     "data": "2027-03-26",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 6,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-03-28",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 16,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 20,
+   "inizio": "2027-03-29",
+   "fine": "2027-04-04",
+   "fase": "Costruzione",
+   "nota": "Test 10 km: obiettivo 1:02:00 o meglio.",
+   "km": 26,
+   "sessioni": [
+    {
+     "data": "2027-03-30",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 7,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-04-01",
+     "giorno": "gio",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 6,
+     "descrizione": "facile + 4 allunghi",
+     "dettaglio": "facile + 4 allunghi"
+    },
+    {
+     "data": "2027-04-04",
+     "giorno": "dom",
+     "tipo": "test",
+     "titolo": "Test 10 km",
+     "km": 13,
+     "descrizione": "TEST 10 km (2 risc + 10 + 1)",
+     "dettaglio": "Riscaldamento 2 km, poi 10 km a tutta, poi 1 km di defaticamento."
+    }
+   ]
+  },
+  {
+   "n": 21,
+   "inizio": "2027-04-05",
+   "fine": "2027-04-11",
+   "fase": "Sviluppo",
+   "nota": "",
+   "km": 39,
+   "sessioni": [
+    {
+     "data": "2027-04-06",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 8,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-04-08",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 9,
+     "descrizione": "8×45\" in salita sostenuta, rec. in discesa",
+     "dettaglio": "8×45\" in salita sostenuta, rec. in discesa"
+    },
+    {
+     "data": "2027-04-09",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 6,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-04-11",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 16,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 22,
+   "inizio": "2027-04-12",
+   "fine": "2027-04-18",
+   "fase": "Sviluppo",
+   "nota": "",
+   "km": 41,
+   "sessioni": [
+    {
+     "data": "2027-04-13",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 8,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-04-15",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 10,
+     "descrizione": "3×10' a ritmo soglia, rec. 2'",
+     "dettaglio": "3×10' a ritmo soglia, rec. 2'"
+    },
+    {
+     "data": "2027-04-16",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 6,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-04-18",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 17,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 23,
+   "inizio": "2027-04-19",
+   "fine": "2027-04-25",
+   "fase": "Sviluppo",
+   "nota": "",
+   "km": 43,
+   "sessioni": [
+    {
+     "data": "2027-04-20",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 9,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-04-22",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 10,
+     "descrizione": "6×1000 m a ritmo ripetute, rec. 2'",
+     "dettaglio": "6×1000 m a ritmo ripetute, rec. 2'"
+    },
+    {
+     "data": "2027-04-23",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 6,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-04-25",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 18,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 24,
+   "inizio": "2027-04-26",
+   "fine": "2027-05-02",
+   "fase": "Sviluppo",
+   "nota": "Scarico.",
+   "km": 34,
+   "sessioni": [
+    {
+     "data": "2027-04-27",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 7,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-04-29",
+     "giorno": "gio",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 8,
+     "descrizione": "facile + 6 allunghi",
+     "dettaglio": "facile + 6 allunghi"
+    },
+    {
+     "data": "2027-04-30",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 5,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-05-02",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 14,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 25,
+   "inizio": "2027-05-03",
+   "fine": "2027-05-09",
+   "fase": "Sviluppo",
+   "nota": "",
+   "km": 43,
+   "sessioni": [
+    {
+     "data": "2027-05-04",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 9,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-05-06",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 10,
+     "descrizione": "10×45\" in salita, rec. in discesa",
+     "dettaglio": "10×45\" in salita, rec. in discesa"
+    },
+    {
+     "data": "2027-05-07",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 6,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-05-09",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 18,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 26,
+   "inizio": "2027-05-10",
+   "fine": "2027-05-16",
+   "fase": "Sviluppo",
+   "nota": "",
+   "km": 45,
+   "sessioni": [
+    {
+     "data": "2027-05-11",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 9,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-05-13",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 11,
+     "descrizione": "25' continui a ritmo soglia",
+     "dettaglio": "25' continui a ritmo soglia"
+    },
+    {
+     "data": "2027-05-14",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 6,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-05-16",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 19,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 27,
+   "inizio": "2027-05-17",
+   "fine": "2027-05-23",
+   "fase": "Sviluppo",
+   "nota": "",
+   "km": 45,
+   "sessioni": [
+    {
+     "data": "2027-05-18",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 9,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-05-20",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 10,
+     "descrizione": "4×1500 m a ritmo soglia, rec. 90\"",
+     "dettaglio": "4×1500 m a ritmo soglia, rec. 90\""
+    },
+    {
+     "data": "2027-05-21",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 6,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-05-23",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 20,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 28,
+   "inizio": "2027-05-24",
+   "fine": "2027-05-30",
+   "fase": "Sviluppo",
+   "nota": "Test mezza maratona: obiettivo 2:12 o meglio.",
+   "km": 38,
+   "sessioni": [
+    {
+     "data": "2027-05-25",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 8,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-05-27",
+     "giorno": "gio",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 7,
+     "descrizione": "facile + 4 allunghi",
+     "dettaglio": "facile + 4 allunghi"
+    },
+    {
+     "data": "2027-05-30",
+     "giorno": "dom",
+     "tipo": "test",
+     "titolo": "Test mezza",
+     "km": 23,
+     "descrizione": "TEST MEZZA (2 risc + 21,1)",
+     "dettaglio": "Riscaldamento 2 km, poi mezza a tutta, poi 1 km di defaticamento."
+    }
+   ]
+  },
+  {
+   "n": 29,
+   "inizio": "2027-05-31",
+   "fine": "2027-06-06",
+   "fase": "Sviluppo",
+   "nota": "Recupero dopo la mezza.",
+   "km": 33,
+   "sessioni": [
+    {
+     "data": "2027-06-01",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 6,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-06-03",
+     "giorno": "gio",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 8,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-06-04",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 5,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-06-06",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 14,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 30,
+   "inizio": "2027-06-07",
+   "fine": "2027-06-13",
+   "fase": "Sviluppo",
+   "nota": "",
+   "km": 44,
+   "sessioni": [
+    {
+     "data": "2027-06-08",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 9,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-06-10",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 10,
+     "descrizione": "3×12' a ritmo soglia, rec. 2'",
+     "dettaglio": "3×12' a ritmo soglia, rec. 2'"
+    },
+    {
+     "data": "2027-06-11",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 6,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-06-13",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 19,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 31,
+   "inizio": "2027-06-14",
+   "fine": "2027-06-20",
+   "fase": "Sviluppo",
+   "nota": "",
+   "km": 45,
+   "sessioni": [
+    {
+     "data": "2027-06-15",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 9,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-06-17",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 10,
+     "descrizione": "6×1000 m a ritmo ripetute, rec. 2'",
+     "dettaglio": "6×1000 m a ritmo ripetute, rec. 2'"
+    },
+    {
+     "data": "2027-06-18",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 6,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-06-20",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 20,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 32,
+   "inizio": "2027-06-21",
+   "fine": "2027-06-27",
+   "fase": "Sviluppo",
+   "nota": "",
+   "km": 46,
+   "sessioni": [
+    {
+     "data": "2027-06-22",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 9,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-06-24",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 10,
+     "descrizione": "30' progressivo fino a ritmo soglia",
+     "dettaglio": "30' progressivo fino a ritmo soglia"
+    },
+    {
+     "data": "2027-06-25",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 6,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-06-27",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 21,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 33,
+   "inizio": "2027-06-28",
+   "fine": "2027-07-04",
+   "fase": "Estate",
+   "nota": "Scarico. Corri prima delle 8.",
+   "km": 35,
+   "sessioni": [
+    {
+     "data": "2027-06-29",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 7,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-07-01",
+     "giorno": "gio",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 8,
+     "descrizione": "facile + 6 allunghi",
+     "dettaglio": "facile + 6 allunghi"
+    },
+    {
+     "data": "2027-07-02",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 5,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-07-04",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 15,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 34,
+   "inizio": "2027-07-05",
+   "fine": "2027-07-11",
+   "fase": "Estate",
+   "nota": "",
+   "km": 40,
+   "sessioni": [
+    {
+     "data": "2027-07-06",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 8,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-07-08",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 9,
+     "descrizione": "2×12' soglia a sensazione",
+     "dettaglio": "2×12' soglia a sensazione"
+    },
+    {
+     "data": "2027-07-09",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 5,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-07-11",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 18,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 35,
+   "inizio": "2027-07-12",
+   "fine": "2027-07-18",
+   "fase": "Estate",
+   "nota": "",
+   "km": 40,
+   "sessioni": [
+    {
+     "data": "2027-07-13",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 8,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-07-15",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 9,
+     "descrizione": "fartlek 10×1' svelto / 1'30\" piano",
+     "dettaglio": "fartlek 10×1' svelto / 1'30\" piano"
+    },
+    {
+     "data": "2027-07-16",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 5,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-07-18",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 18,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 36,
+   "inizio": "2027-07-19",
+   "fine": "2027-07-25",
+   "fase": "Estate",
+   "nota": "",
+   "km": 42,
+   "sessioni": [
+    {
+     "data": "2027-07-20",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 8,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-07-22",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 9,
+     "descrizione": "3×10' soglia a sensazione",
+     "dettaglio": "3×10' soglia a sensazione"
+    },
+    {
+     "data": "2027-07-23",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 5,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-07-25",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 20,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 37,
+   "inizio": "2027-07-26",
+   "fine": "2027-08-01",
+   "fase": "Estate",
+   "nota": "Scarico.",
+   "km": 32,
+   "sessioni": [
+    {
+     "data": "2027-07-27",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 7,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-07-29",
+     "giorno": "gio",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 7,
+     "descrizione": "facile + 4 allunghi",
+     "dettaglio": "facile + 4 allunghi"
+    },
+    {
+     "data": "2027-07-30",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 4,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-08-01",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 14,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 38,
+   "inizio": "2027-08-02",
+   "fine": "2027-08-08",
+   "fase": "Estate",
+   "nota": "",
+   "km": 42,
+   "sessioni": [
+    {
+     "data": "2027-08-03",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 8,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-08-05",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 9,
+     "descrizione": "8×45\" in salita, rec. in discesa",
+     "dettaglio": "8×45\" in salita, rec. in discesa"
+    },
+    {
+     "data": "2027-08-06",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 5,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-08-08",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 20,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 39,
+   "inizio": "2027-08-09",
+   "fine": "2027-08-15",
+   "fase": "Specifico",
+   "nota": "",
+   "km": 47,
+   "sessioni": [
+    {
+     "data": "2027-08-10",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 8,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-08-12",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 10,
+     "descrizione": "3×2 km a ritmo gara, rec. 2'",
+     "dettaglio": "3×2 km a ritmo gara, rec. 2'"
+    },
+    {
+     "data": "2027-08-13",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 5,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-08-15",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 24,
+     "descrizione": "lento, prova i gel",
+     "dettaglio": "lento, prova i gel"
+    }
+   ]
+  },
+  {
+   "n": 40,
+   "inizio": "2027-08-16",
+   "fine": "2027-08-22",
+   "fase": "Specifico",
+   "nota": "",
+   "km": 49,
+   "sessioni": [
+    {
+     "data": "2027-08-17",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 9,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-08-19",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 10,
+     "descrizione": "4×1500 m a ritmo soglia, rec. 90\"",
+     "dettaglio": "4×1500 m a ritmo soglia, rec. 90\""
+    },
+    {
+     "data": "2027-08-20",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 5,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-08-22",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 25,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 41,
+   "inizio": "2027-08-23",
+   "fine": "2027-08-29",
+   "fase": "Specifico",
+   "nota": "",
+   "km": 53,
+   "sessioni": [
+    {
+     "data": "2027-08-24",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 9,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-08-26",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 12,
+     "descrizione": "8 km continui a ritmo gara",
+     "dettaglio": "8 km continui a ritmo gara"
+    },
+    {
+     "data": "2027-08-27",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 6,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-08-29",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 26,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 42,
+   "inizio": "2027-08-30",
+   "fine": "2027-09-05",
+   "fase": "Specifico",
+   "nota": "Scarico.",
+   "km": 40,
+   "sessioni": [
+    {
+     "data": "2027-08-31",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 7,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-09-02",
+     "giorno": "gio",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 8,
+     "descrizione": "facile + 6 allunghi",
+     "dettaglio": "facile + 6 allunghi"
+    },
+    {
+     "data": "2027-09-03",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 5,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-09-05",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 20,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 43,
+   "inizio": "2027-09-06",
+   "fine": "2027-09-12",
+   "fase": "Specifico",
+   "nota": "",
+   "km": 54,
+   "sessioni": [
+    {
+     "data": "2027-09-07",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 9,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-09-09",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 11,
+     "descrizione": "5×1000 m a ritmo ripetute, rec. 2'",
+     "dettaglio": "5×1000 m a ritmo ripetute, rec. 2'"
+    },
+    {
+     "data": "2027-09-10",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 6,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-09-12",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 28,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 44,
+   "inizio": "2027-09-13",
+   "fine": "2027-09-19",
+   "fase": "Specifico",
+   "nota": "",
+   "km": 53,
+   "sessioni": [
+    {
+     "data": "2027-09-14",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 10,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-09-16",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 12,
+     "descrizione": "2×4 km a ritmo soglia, rec. 3'",
+     "dettaglio": "2×4 km a ritmo soglia, rec. 3'"
+    },
+    {
+     "data": "2027-09-17",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 6,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-09-19",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 25,
+     "descrizione": "ultimi 12 km a ritmo gara",
+     "dettaglio": "ultimi 12 km a ritmo gara"
+    }
+   ]
+  },
+  {
+   "n": 45,
+   "inizio": "2027-09-20",
+   "fine": "2027-09-26",
+   "fase": "Specifico",
+   "nota": "",
+   "km": 59,
+   "sessioni": [
+    {
+     "data": "2027-09-21",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 10,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-09-23",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 13,
+     "descrizione": "10 km continui a ritmo gara",
+     "dettaglio": "10 km continui a ritmo gara"
+    },
+    {
+     "data": "2027-09-24",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 6,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-09-26",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 30,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 46,
+   "inizio": "2027-09-27",
+   "fine": "2027-10-03",
+   "fase": "Specifico",
+   "nota": "Test mezza: obiettivo 2:06 o meglio. Scarpe e gel di gara.",
+   "km": 39,
+   "sessioni": [
+    {
+     "data": "2027-09-28",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 8,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-09-30",
+     "giorno": "gio",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 8,
+     "descrizione": "facile + 4 allunghi",
+     "dettaglio": "facile + 4 allunghi"
+    },
+    {
+     "data": "2027-10-03",
+     "giorno": "dom",
+     "tipo": "test",
+     "titolo": "Test mezza",
+     "km": 23,
+     "descrizione": "TEST MEZZA (2 risc + 21,1)",
+     "dettaglio": "Riscaldamento 2 km, poi mezza a tutta, poi 1 km di defaticamento."
+    }
+   ]
+  },
+  {
+   "n": 47,
+   "inizio": "2027-10-04",
+   "fine": "2027-10-10",
+   "fase": "Specifico",
+   "nota": "Lungo più lungo del piano.",
+   "km": 59,
+   "sessioni": [
+    {
+     "data": "2027-10-05",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 9,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-10-07",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 12,
+     "descrizione": "3×3 km a ritmo soglia, rec. 2'",
+     "dettaglio": "3×3 km a ritmo soglia, rec. 2'"
+    },
+    {
+     "data": "2027-10-08",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 6,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-10-10",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 32,
+     "descrizione": "lento (max 3h15)",
+     "dettaglio": "lento (max 3h15)"
+    }
+   ]
+  },
+  {
+   "n": 48,
+   "inizio": "2027-10-11",
+   "fine": "2027-10-17",
+   "fase": "Specifico",
+   "nota": "Ultima seduta pesante.",
+   "km": 53,
+   "sessioni": [
+    {
+     "data": "2027-10-12",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 10,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-10-14",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 11,
+     "descrizione": "4×1600 m a ritmo soglia, rec. 90\"",
+     "dettaglio": "4×1600 m a ritmo soglia, rec. 90\""
+    },
+    {
+     "data": "2027-10-15",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 6,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-10-17",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 26,
+     "descrizione": "ultimi 14 km a ritmo gara",
+     "dettaglio": "ultimi 14 km a ritmo gara"
+    }
+   ]
+  },
+  {
+   "n": 49,
+   "inizio": "2027-10-18",
+   "fine": "2027-10-24",
+   "fase": "Scarico",
+   "nota": "Ultima palestra con gambe, leggera.",
+   "km": 45,
+   "sessioni": [
+    {
+     "data": "2027-10-19",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 8,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-10-21",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 10,
+     "descrizione": "6 km a ritmo gara",
+     "dettaglio": "6 km a ritmo gara"
+    },
+    {
+     "data": "2027-10-22",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 5,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-10-24",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 22,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 50,
+   "inizio": "2027-10-25",
+   "fine": "2027-10-31",
+   "fase": "Scarico",
+   "nota": "Solo core in palestra.",
+   "km": 36,
+   "sessioni": [
+    {
+     "data": "2027-10-26",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 7,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-10-28",
+     "giorno": "gio",
+     "tipo": "qualita",
+     "titolo": "Lavoro di qualità",
+     "km": 8,
+     "descrizione": "4 km a ritmo gara",
+     "dettaglio": "4 km a ritmo gara"
+    },
+    {
+     "data": "2027-10-29",
+     "giorno": "ven",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 5,
+     "descrizione": "facile",
+     "dettaglio": "Devi riuscire a parlare a frasi intere."
+    },
+    {
+     "data": "2027-10-31",
+     "giorno": "dom",
+     "tipo": "lungo",
+     "titolo": "Lungo",
+     "km": 16,
+     "descrizione": "lento",
+     "dettaglio": "Ritmo facile dall'inizio alla fine."
+    }
+   ]
+  },
+  {
+   "n": 51,
+   "inizio": "2027-11-01",
+   "fine": "2027-11-07",
+   "fase": "Scarico",
+   "nota": "Gara domenica 7 novembre. La notte prima negli USA torna l'ora solare: un'ora di sonno in più.",
+   "km": 56.2,
+   "sessioni": [
+    {
+     "data": "2027-11-02",
+     "giorno": "mar",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 6,
+     "descrizione": "facile con 3 km a ritmo gara",
+     "dettaglio": "facile con 3 km a ritmo gara"
+    },
+    {
+     "data": "2027-11-04",
+     "giorno": "gio",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 5,
+     "descrizione": "facile + 4 allunghi",
+     "dettaglio": "facile + 4 allunghi"
+    },
+    {
+     "data": "2027-11-06",
+     "giorno": "sab",
+     "tipo": "facile",
+     "titolo": "Corsa facile",
+     "km": 3,
+     "descrizione": "3 km sciolti a New York",
+     "dettaglio": "3 km sciolti a New York"
+    },
+    {
+     "data": "2027-11-07",
+     "giorno": "dom",
+     "tipo": "gara",
+     "titolo": "Maratona di New York",
+     "km": 42.2,
+     "descrizione": "MARATONA DI NEW YORK",
+     "dettaglio": "MARATONA DI NEW YORK"
+    }
+   ]
+  }
+ ]
+}

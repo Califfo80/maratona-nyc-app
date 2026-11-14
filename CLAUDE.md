@@ -13,16 +13,20 @@ Web app (PWA) personale di Simone per prepararsi alla Maratona di New York del 7
 src/index.html       interfaccia (CSS + JS inline): schede Oggi, Piano, Andamento, Diario e fogli modali
 src/engine.js        motore puro con placeholder __PLAN__ (sostituito in build)
 src/plan-data.json   le 51 settimane: [fase, mar, gio, ven, dom, nota], sessione = [km, descrizione]
-build.py             copia src/ in public/ e inietta il piano dentro engine.js
-public/              ciò che viene servito (index.html, engine.js, sw.js, manifest, icons/)
+build.py             copia src/ in public/, inietta il piano dentro engine.js e lancia piano-json.js
+piano-json.js        genera public/piano.json (piano di base settimana per settimana) dal motore
+public/              ciò che viene servito (index.html, engine.js, sw.js, manifest, icons/, piano.json)
+calendario/promemoria.gs   Google Apps Script: ogni sabato mette la settimana dopo nel calendario "Maratona NYC" e notifica alle 9
 test-engine.js       scenari di prova del motore in Node (stampa a video, non asserisce)
+test-calendario.js   test con asserzioni di piano.json e delle funzioni pure di promemoria.gs
 Dockerfile, nginx.conf   immagine nginx:alpine per Coolify (porta 80)
 ```
 
 ## Comandi
 ```bash
-python3 build.py                      # sempre, dopo ogni modifica a src/
+python3 build.py                      # sempre, dopo ogni modifica a src/ (serve Node per piano.json)
 node test-engine.js                   # scenari: piano seguito, malattia, settimane ferme, giovedì saltato, feedback
+node --test test-calendario.js        # piano.json e logica del promemoria Google Calendar
 cd public && python3 -m http.server 8765   # prova in locale; ?oggi=2027-02-11 simula una data
 docker build -t nyc27 . && docker run -p 8080:80 nyc27
 ```
@@ -33,6 +37,13 @@ docker build -t nyc27 . && docker run -p 8080:80 nyc27
 - **Adattamento.** Le corse saltate non si recuperano mai. Il giovedì di qualità saltato passa al venerdì della stessa settimana. Il tetto settimanale è `1.15 × max(km effettivi delle 3 settimane precedenti) + 2`, mai sotto il 50% del piano. Il tetto del lungo è `1.15 × corsa più lunga degli ultimi 21 giorni + 1.5`. Malattia o dolore attivano 7 giorni di prudenza: qualità sostituita da corsa facile, km × 0.8. Una sessione passata e non registrata conta come saltata ("missed").
 - **Obiettivo.** Lo stato è `ok` / `warn` (+5 min) / `bad`. L'obiettivo realistico è la previsione arrotondata ai 5 minuti superiori. Il ritmo gara usa `max(obiettivo, previsione)`: dalla settimana 38 la previsione "se continui così", prima quella "se segui il piano".
 - I test di controllo e i loro obiettivi stanno in `TESTS`: settimane 8, 20, 28 e 46.
+
+## Promemoria Google Calendar (`calendario/promemoria.gs`)
+- Gira su Google Apps Script con l'account di Simone, non sul server. Trigger: sabato tra le 7 e le 8 (Europe/Rome).
+- Legge `https://corsa.ragazzodelcoaching.com/piano.json`: cambiare la struttura di `piano.json` rompe lo script, quindi aggiorna insieme `piano-json.js`, `promemoria.gs` e `test-calendario.js`.
+- Usa il piano di **base**: gli adattamenti dipendono dalle corse registrate, che restano sul telefono.
+- Eventi di giornata intera senza promemoria, marcati con il tag `maratonaNyc=corsa`; un evento di 15 minuti alle 9:00 del giorno di esecuzione (`maratonaNyc=riepilogo-N`) con notifica a 0 minuti. Rilanciare lo script rifà la settimana senza doppioni.
+- Le funzioni pure (`lunediDopo`, `settimanaDel`, `titoloEvento`, `descrizioneEvento`, `riepilogo`, `minutiRiepilogo`) si provano in Node; quelle con i servizi Google no. Dopo una modifica, aggiorna lo script anche su script.google.com: non si sincronizza da solo.
 
 ## Convenzioni
 - Modifica `src/`, poi lancia `build.py`. Non toccare a mano `public/index.html` e `public/engine.js`.

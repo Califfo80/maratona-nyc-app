@@ -25,6 +25,16 @@ Per gli aggiornamenti basta un push sul repository: con l'auto deploy attivo Coo
 
 I dati sono salvati nel browser del telefono (localStorage) e non passano dal server. Da *Oggi* → icona impostazioni → **Esporta i dati** fai un backup in JSON, che puoi reimportare su un altro dispositivo.
 
+## Promemoria su Google Calendar
+
+Ogni sabato mattina le corse della settimana dopo compaiono in un calendario "Maratona NYC" (es. *Corsa facile · 5 km*) e alle 9:00 arriva una notifica con il riepilogo. Il calendario segue il piano di base: i km adattati li trovi nell'app.
+
+1. Vai su [script.google.com](https://script.google.com) → **Nuovo progetto**.
+2. Cancella il codice di esempio e incolla il contenuto di `calendario/promemoria.gs`. Salva.
+3. In alto scegli la funzione **installa** → **Esegui** → autorizza con il tuo account Google.
+
+Per fermarlo esegui **disinstalla**. Dopo ogni modifica a `promemoria.gs` va reincollato su script.google.com.
+
 ## Come ragiona l'app
 
 - **Forma (VDOT).** Si stima con le formule di Jack Daniels. I test e le gare pesano molto. Le corse facili contano meno e usano FC media (se imposti la FC massima) o sforzo percepito. Le corse vecchie pesano sempre meno e dopo più di 10 giorni senza correre la forma cala.
