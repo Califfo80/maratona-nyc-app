@@ -43,6 +43,7 @@ docker build -t nyc27 . && docker run -p 8080:80 nyc27
 - Legge `https://corsa.ragazzodelcoaching.com/piano.json`: cambiare la struttura di `piano.json` rompe lo script, quindi aggiorna insieme `piano-json.js`, `promemoria.gs` e `test-calendario.js`.
 - Usa il piano di **base**: gli adattamenti dipendono dalle corse registrate, che restano sul telefono.
 - Eventi di giornata intera senza promemoria, marcati con il tag `maratonaNyc=corsa`; un evento di 15 minuti alle 9:00 del giorno di esecuzione (`maratonaNyc=riepilogo-N`) con notifica a 0 minuti. Rilanciare lo script rifà la settimana senza doppioni.
+- `Utilities.formatDate` usa i formati di Java: ogni lettera è un codice, quindi le parole vanno fuori dal formato (o tra apici). Un "alle" dentro il formato dava "Argomento non valido".
 - Le funzioni pure (`lunediDopo`, `settimanaDel`, `titoloEvento`, `descrizioneEvento`, `riepilogo`, `minutiRiepilogo`) si provano in Node; quelle con i servizi Google no. Dopo una modifica, aggiorna lo script anche su script.google.com: non si sincronizza da solo.
 
 ## Convenzioni
