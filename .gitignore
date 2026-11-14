@@ -1,0 +1,8 @@
+*.zip
+.DS_Store
+__pycache__/
+node_modules/
+*.backup.json
+piano-nyc-backup-*.json
+HANDOFF.md
+.env
