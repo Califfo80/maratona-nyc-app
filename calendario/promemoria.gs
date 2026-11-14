@@ -65,7 +65,8 @@ function aggiornaSettimana() {
   nota.removeAllReminders();
   nota.addPopupReminder(0);
   nota.setTag(CONFIG.etichetta, 'riepilogo-' + sett.n);
-  console.log(r.titolo + ' · notifica il ' + Utilities.formatDate(inizio, CONFIG.fuso, 'dd/MM alle HH:mm'));
+  // nei formati di Utilities.formatDate ogni lettera è un codice: le parole restano fuori
+  console.log(r.titolo + ' · notifica il ' + Utilities.formatDate(inizio, CONFIG.fuso, 'dd/MM') + ' alle ' + Utilities.formatDate(inizio, CONFIG.fuso, 'HH:mm'));
 }
 
 function calendario_() {
