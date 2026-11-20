@@ -376,7 +376,7 @@ function parseNum(v){ if (v == null) return NaN; v = String(v).trim().replace(',
 var params = new URLSearchParams(location.search);
 var TODAY = /^\d{4}-\d{2}-\d{2}$/.test(params.get('oggi') || '') ? params.get('oggi') : E.todayIso();
 function defaults(){
-  return { v:1, onboarded:false, settings:{ goal:16200, hrMax:null, hrRest:null },
+  return { v:1, onboarded:false, settings:{ goal:16200, hrMax:null, hrRest:null, vo2max:null, vt1:null, vt2:null },
     runs:[{ id:'r0', date:'2026-11-14', key:null, km:6.5, sec:2760, rpe:8, hr:null, feel:'ok', pain:false, painWhere:'', note:'Prima corsa', max:false, testSec:null }],
     skips:[] };
 }
@@ -536,11 +536,11 @@ function vAndamento(){
     '<div class="tile" style="--c:var(--purple)"><span class="eyebrow">Costanza</span><b class="num">' + Math.round(Math.min(1, f.adherence) * 100) + '<small>%</small></b></div></div>';
   var P = M.paces;
   h += '<div class="ghead">Ritmi di oggi</div><div class="list">' +
-    paceRow('var(--green)', 'Facile e lungo', 'Parli a frasi intere', E.fmtPace(P.easy[0]) + '–' + E.fmtPace(P.easy[1])) +
-    paceRow('var(--orange)', 'Soglia', 'Solo poche parole', E.fmtPace(P.T - 5) + '–' + E.fmtPace(P.T + 5)) +
-    paceRow('var(--red)', 'Ripetute', 'Solo monosillabi', E.fmtPace(P.I - 5) + '–' + E.fmtPace(P.I + 5)) +
+    paceRow('var(--green)', 'Facile e lungo', P.hr ? 'FC sotto ' + P.hr.easy + ' · parli a frasi intere' : 'Parli a frasi intere', E.fmtPace(P.easy[0]) + '–' + E.fmtPace(P.easy[1])) +
+    paceRow('var(--orange)', 'Soglia', P.hr ? 'FC ' + P.hr.T[0] + '–' + P.hr.T[1] + ' · poche parole' : 'Solo poche parole', E.fmtPace(P.T - 5) + '–' + E.fmtPace(P.T + 5)) +
+    paceRow('var(--red)', 'Ripetute', P.hr ? 'FC oltre ' + P.hr.vt2 + ' · monosillabi' : 'Solo monosillabi', E.fmtPace(P.I - 5) + '–' + E.fmtPace(P.I + 5)) +
     paceRow('var(--purple)', 'Ritmo gara', 'Per ' + hm(f.raceTarget) + ', sul GPS', E.fmtPace(P.M[0]) + '–' + E.fmtPace(P.M[1])) +
-    '</div><p class="gfoot">Min/km. Si aggiornano dopo ogni corsa registrata. D\'estate aggiungi 15–30" al km.</p>';
+    '</div><p class="gfoot">Min/km. Si aggiornano dopo ogni corsa registrata. D\'estate aggiungi 15–30" al km.' + (P.hr ? ' Con le soglie del test comanda la frequenza cardiaca: il ritmo è indicativo.' : '') + '</p>';
   h += '<p class="foot">Calcoli con le formule VDOT di Jack Daniels e un margine del 4% per la prima maratona.</p>';
   return { title:'Andamento', html:h, after: drawCharts };
 }
@@ -885,9 +885,11 @@ function openSettings(first){
   var body = (first ? '<div class="fb-top" style="padding-top:12px"><h3>Il tuo piano per New York</h3><p>51 settimane, 4 corse a settimana al massimo, palestra il lunedì e il mercoledì. Registra ogni corsa: il piano e la previsione si adattano a quello che fai davvero.</p></div>' : '') +
     '<div class="ghead">Obiettivo</div><div class="list"><div class="field"><label>Tempo massimo</label><div class="time"><input id="g-h" inputmode="numeric" maxlength="1" value="' + Math.floor(g / 3600) + '" aria-label="Ore"><span>:</span><input id="g-m" inputmode="numeric" maxlength="2" value="' + String(Math.floor(g % 3600 / 60)).padStart(2, '0') + '" aria-label="Minuti"></div></div></div>' +
     '<p class="gfoot">Domenica 7 novembre 2027. Il ritmo gara si calcola da qui.</p>' +
-    (r0 ? '<div class="ghead">La prima corsa · 14 novembre</div><div class="list"><div class="slider-wrap" style="--c:var(--orange)"><div class="slider-top"><b id="s-rpe-v">' + r0.rpe + '</b><span id="s-rpe-l">' + RPE_L[r0.rpe] + '</span></div><input type="range" id="s-rpe" min="3" max="10" value="' + r0.rpe + '" aria-label="Sforzo della prima corsa"><div class="scale"><span>comoda</span><span>a tutta</span></div></div></div><p class="gfoot">6,5 km in 46:00. Quanto hai spinto? È il punto di partenza della stima di forma.</p>' : '') +
+    (r0 ? '<div class="ghead">La prima corsa · 14 novembre</div><div class="list"><div class="slider-wrap" style="--c:var(--orange)"><div class="slider-top"><b id="s-rpe-v">' + r0.rpe + '</b><span id="s-rpe-l">' + RPE_L[r0.rpe] + '</span></div><input type="range" id="s-rpe" min="3" max="10" value="' + r0.rpe + '" aria-label="Sforzo della prima corsa"><div class="scale"><span>comoda</span><span>a tutta</span></div></div></div><p class="gfoot">6,5 km in 46:00. Quanto hai spinto? ' + (st.vo2max ? 'Con il test da sforzo inserito, il punto di partenza è il VO2max del laboratorio.' : 'È il punto di partenza della stima di forma.') + '</p>' : '') +
     '<div class="ghead">Frequenza cardiaca</div><div class="list"><div class="field"><label for="s-hrmax">Massima</label><input class="in num" id="s-hrmax" inputmode="numeric" placeholder="facoltativa" value="' + (st.hrMax || '') + '"><span class="unit">bpm</span></div><div class="field"><label for="s-hrrest">A riposo</label><input class="in num" id="s-hrrest" inputmode="numeric" placeholder="facoltativa" value="' + (st.hrRest || '') + '"><span class="unit">bpm</span></div></div>' +
     '<p class="gfoot">Se la inserisci, la FC media delle corse rende più precisa la stima di forma.</p>' +
+    '<div class="ghead">Test da sforzo</div><div class="list"><div class="field"><label for="s-vo2">VO2max</label><input class="in num" id="s-vo2" inputmode="decimal" placeholder="facoltativo" value="' + (st.vo2max ? String(st.vo2max).replace('.', ',') : '') + '"><span class="unit">ml/kg/min</span></div><div class="field"><label for="s-vt1">Soglia VT1</label><input class="in num" id="s-vt1" inputmode="numeric" placeholder="facoltativa" value="' + (st.vt1 || '') + '"><span class="unit">bpm</span></div><div class="field"><label for="s-vt2">Soglia VT2</label><input class="in num" id="s-vt2" inputmode="numeric" placeholder="facoltativa" value="' + (st.vt2 || '') + '"><span class="unit">bpm</span></div></div>' +
+    '<p class="gfoot">Dal referto del test cardiopolmonare: VT1 è la soglia aerobica, VT2 quella anaerobica, in battiti al minuto. Il VO2max diventa il punto di partenza della stima di forma; le soglie danno la FC delle corse facili (fino a VT1 + 10) e dei lavori.</p>' +
     (first ? '' :
     '<div class="ghead">Backup</div><div class="list">' +
       '<button class="row tap" data-x="export"><span class="grow" style="color:var(--blue)">Esporta i dati</span></button>' +
@@ -926,6 +928,10 @@ function openSettings(first){
       var mx = parseNum($('#s-hrmax', sh).value), rs = parseNum($('#s-hrrest', sh).value);
       state.settings.hrMax = mx > 120 && mx < 230 ? Math.round(mx) : null;
       state.settings.hrRest = rs > 30 && rs < 110 ? Math.round(rs) : null;
+      var vo = parseNum($('#s-vo2', sh).value), v1 = parseNum($('#s-vt1', sh).value), v2 = parseNum($('#s-vt2', sh).value);
+      state.settings.vo2max = vo >= 15 && vo <= 90 ? Math.round(vo * 10) / 10 : null;
+      state.settings.vt1 = v1 > 80 && v1 < 230 ? Math.round(v1) : null;
+      state.settings.vt2 = v2 > 80 && v2 < 230 && (!state.settings.vt1 || v2 > state.settings.vt1) ? Math.round(v2) : null;
       var sr = $('#s-rpe', sh), r0b = runById('r0'); if (sr && r0b) r0b.rpe = +sr.value;
       state.onboarded = true; save(); render(true);
       if (first) toast('Piano pronto');

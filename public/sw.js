@@ -1,5 +1,5 @@
 /* Service worker: l'app funziona offline dopo la prima apertura. */
-const CACHE = 'nyc27-v1';
+const CACHE = 'nyc27-v2';
 const ASSETS = ['./', './index.html', './engine.js', './manifest.webmanifest', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png'];
 
 self.addEventListener('install', e => {

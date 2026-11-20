@@ -3,7 +3,7 @@
 (function (root) {
   'use strict';
 
-  var PLAN = [[1, [5, "facile"], [5, "facile"], null, [6, "lento"], "Se serve alterna 4' corsa e 1' cammino."], [1, [5, "facile"], [5, "facile"], null, [7, "lento"], ""], [1, [6, "facile"], [5, "facile + 4 allunghi"], null, [8, "lento"], ""], [1, [5, "facile"], [4, "facile"], null, [6, "lento"], "Scarico."], [1, [6, "facile"], [6, "facile + 6 allunghi"], null, [9, "lento"], ""], [1, [6, "facile"], [6, "facile + 6 allunghi"], null, [10, "lento"], "Natale: se salti una corsa, salta la più corta."], [1, [5, "facile"], [5, "facile"], null, [7, "lento"], "Scarico."], [1, [6, "facile"], [5, "facile + 4 allunghi"], null, [8, "TEST 5 km (2 risc + 5 + 1)"], "Test 5 km: obiettivo 32:00 o meglio."], [2, [7, "facile"], [6, "fartlek 6×1' svelto / 2' piano"], null, [11, "lento"], ""], [2, [7, "facile"], [7, "progressivo: ultimi 2 km a ritmo medio"], null, [12, "lento"], ""], [2, [7, "facile"], [7, "fartlek 8×1' svelto / 2' piano"], [4, "facile"], [12, "lento"], "Si aggiunge la corsa del venerdì."], [2, [6, "facile"], [6, "facile + 6 allunghi"], [4, "facile"], [9, "lento"], "Scarico. Si apre il sorteggio NYRR: iscriviti."], [2, [7, "facile"], [8, "3×6' a ritmo soglia, rec. 2'"], [5, "facile"], [13, "lento"], ""], [2, [8, "facile"], [8, "3×8' a ritmo soglia, rec. 2'"], [5, "facile"], [14, "lento"], ""], [2, [8, "facile"], [9, "6×3' a ritmo ripetute, rec. 2'"], [5, "facile"], [15, "lento"], ""], [2, [6, "facile"], [7, "facile + 6 allunghi"], [4, "facile"], [11, "lento"], "Scarico. Esito sorteggio a marzo: se negativo, tour operator."], [2, [8, "facile"], [9, "2×12' a ritmo soglia, rec. 3'"], [5, "facile"], [16, "lento"], ""], [2, [8, "facile"], [9, "5×1000 m a ritmo ripetute, rec. 2'30\""], [6, "facile"], [16, "lento"], ""], [2, [8, "facile"], [10, "20' continui a ritmo soglia"], [6, "facile"], [16, "lento"], ""], [2, [7, "facile"], [6, "facile + 4 allunghi"], null, [13, "TEST 10 km (2 risc + 10 + 1)"], "Test 10 km: obiettivo 1:02:00 o meglio."], [3, [8, "facile"], [9, "8×45\" in salita sostenuta, rec. in discesa"], [6, "facile"], [16, "lento"], ""], [3, [8, "facile"], [10, "3×10' a ritmo soglia, rec. 2'"], [6, "facile"], [17, "lento"], ""], [3, [9, "facile"], [10, "6×1000 m a ritmo ripetute, rec. 2'"], [6, "facile"], [18, "lento"], ""], [3, [7, "facile"], [8, "facile + 6 allunghi"], [5, "facile"], [14, "lento"], "Scarico."], [3, [9, "facile"], [10, "10×45\" in salita, rec. in discesa"], [6, "facile"], [18, "lento"], ""], [3, [9, "facile"], [11, "25' continui a ritmo soglia"], [6, "facile"], [19, "lento"], ""], [3, [9, "facile"], [10, "4×1500 m a ritmo soglia, rec. 90\""], [6, "facile"], [20, "lento"], ""], [3, [8, "facile"], [7, "facile + 4 allunghi"], null, [23, "TEST MEZZA (2 risc + 21,1)"], "Test mezza maratona: obiettivo 2:12 o meglio."], [3, [6, "facile"], [8, "facile"], [5, "facile"], [14, "lento"], "Recupero dopo la mezza."], [3, [9, "facile"], [10, "3×12' a ritmo soglia, rec. 2'"], [6, "facile"], [19, "lento"], ""], [3, [9, "facile"], [10, "6×1000 m a ritmo ripetute, rec. 2'"], [6, "facile"], [20, "lento"], ""], [3, [9, "facile"], [10, "30' progressivo fino a ritmo soglia"], [6, "facile"], [21, "lento"], ""], [4, [7, "facile"], [8, "facile + 6 allunghi"], [5, "facile"], [15, "lento"], "Scarico. Corri prima delle 8."], [4, [8, "facile"], [9, "2×12' soglia a sensazione"], [5, "facile"], [18, "lento"], ""], [4, [8, "facile"], [9, "fartlek 10×1' svelto / 1'30\" piano"], [5, "facile"], [18, "lento"], ""], [4, [8, "facile"], [9, "3×10' soglia a sensazione"], [5, "facile"], [20, "lento"], ""], [4, [7, "facile"], [7, "facile + 4 allunghi"], [4, "facile"], [14, "lento"], "Scarico."], [4, [8, "facile"], [9, "8×45\" in salita, rec. in discesa"], [5, "facile"], [20, "lento"], ""], [5, [8, "facile"], [10, "3×2 km a ritmo gara, rec. 2'"], [5, "facile"], [24, "lento, prova i gel"], ""], [5, [9, "facile"], [10, "4×1500 m a ritmo soglia, rec. 90\""], [5, "facile"], [25, "lento"], ""], [5, [9, "facile"], [12, "8 km continui a ritmo gara"], [6, "facile"], [26, "lento"], ""], [5, [7, "facile"], [8, "facile + 6 allunghi"], [5, "facile"], [20, "lento"], "Scarico."], [5, [9, "facile"], [11, "5×1000 m a ritmo ripetute, rec. 2'"], [6, "facile"], [28, "lento"], ""], [5, [10, "facile"], [12, "2×4 km a ritmo soglia, rec. 3'"], [6, "facile"], [25, "ultimi 12 km a ritmo gara"], ""], [5, [10, "facile"], [13, "10 km continui a ritmo gara"], [6, "facile"], [30, "lento"], ""], [5, [8, "facile"], [8, "facile + 4 allunghi"], null, [23, "TEST MEZZA (2 risc + 21,1)"], "Test mezza: obiettivo 2:06 o meglio. Scarpe e gel di gara."], [5, [9, "facile"], [12, "3×3 km a ritmo soglia, rec. 2'"], [6, "facile"], [32, "lento (max 3h15)"], "Lungo più lungo del piano."], [5, [10, "facile"], [11, "4×1600 m a ritmo soglia, rec. 90\""], [6, "facile"], [26, "ultimi 14 km a ritmo gara"], "Ultima seduta pesante."], [6, [8, "facile"], [10, "6 km a ritmo gara"], [5, "facile"], [22, "lento"], "Ultima palestra con gambe, leggera."], [6, [7, "facile"], [8, "4 km a ritmo gara"], [5, "facile"], [16, "lento"], "Solo core in palestra."], [6, [6, "facile con 3 km a ritmo gara"], [5, "facile + 4 allunghi"], [3, "sabato: 3 km sciolti a NYC"], [42.2, "MARATONA DI NEW YORK"], "Gara domenica 7 novembre. La notte prima negli USA torna l'ora solare: un'ora di sonno in più."]];
+  var PLAN = [[1, [5, "facile"], [5, "facile"], null, [6, "lento"], "Se serve alterna 4' corsa e 1' cammino."], [1, [5, "facile"], [5, "facile"], null, [7, "lento"], ""], [1, [6, "facile"], [5, "facile + 4 allunghi"], null, [8, "lento"], ""], [1, [5, "facile"], [4, "facile"], null, [6, "lento"], "Scarico."], [1, [6, "facile"], [6, "facile + 6 allunghi"], null, [9, "lento"], ""], [1, [6, "facile"], [6, "facile + 6 allunghi"], null, [10, "lento"], "Natale: se salti una corsa, salta la più corta."], [1, [5, "facile"], [5, "facile"], null, [7, "lento"], "Scarico."], [1, [6, "facile"], [5, "facile + 4 allunghi"], null, [8, "TEST 5 km (2 risc + 5 + 1)"], "Test 5 km: l'obiettivo aggiornato è nell'app."], [2, [7, "facile"], [6, "fartlek 6×1' svelto / 2' piano"], null, [11, "lento"], ""], [2, [7, "facile"], [7, "progressivo: ultimi 2 km a ritmo medio"], null, [12, "lento"], ""], [2, [7, "facile"], [7, "fartlek 8×1' svelto / 2' piano"], [4, "facile"], [12, "lento"], "Si aggiunge la corsa del venerdì."], [2, [6, "facile"], [6, "facile + 6 allunghi"], [4, "facile"], [9, "lento"], "Scarico. Si apre il sorteggio NYRR: iscriviti."], [2, [7, "facile"], [8, "3×6' a ritmo soglia, rec. 2'"], [5, "facile"], [13, "lento"], ""], [2, [8, "facile"], [8, "3×8' a ritmo soglia, rec. 2'"], [5, "facile"], [14, "lento"], ""], [2, [8, "facile"], [9, "6×3' a ritmo ripetute, rec. 2'"], [5, "facile"], [15, "lento"], ""], [2, [6, "facile"], [7, "facile + 6 allunghi"], [4, "facile"], [11, "lento"], "Scarico. Esito sorteggio a marzo: se negativo, tour operator."], [2, [8, "facile"], [9, "2×12' a ritmo soglia, rec. 3'"], [5, "facile"], [16, "lento"], ""], [2, [8, "facile"], [9, "5×1000 m a ritmo ripetute, rec. 2'30\""], [6, "facile"], [16, "lento"], ""], [2, [8, "facile"], [10, "20' continui a ritmo soglia"], [6, "facile"], [16, "lento"], ""], [2, [7, "facile"], [6, "facile + 4 allunghi"], null, [13, "TEST 10 km (2 risc + 10 + 1)"], "Test 10 km: l'obiettivo aggiornato è nell'app."], [3, [8, "facile"], [9, "8×45\" in salita sostenuta, rec. in discesa"], [6, "facile"], [16, "lento"], ""], [3, [8, "facile"], [10, "3×10' a ritmo soglia, rec. 2'"], [6, "facile"], [17, "lento"], ""], [3, [9, "facile"], [10, "6×1000 m a ritmo ripetute, rec. 2'"], [6, "facile"], [18, "lento"], ""], [3, [7, "facile"], [8, "facile + 6 allunghi"], [5, "facile"], [14, "lento"], "Scarico."], [3, [9, "facile"], [10, "10×45\" in salita, rec. in discesa"], [6, "facile"], [18, "lento"], ""], [3, [9, "facile"], [11, "25' continui a ritmo soglia"], [6, "facile"], [19, "lento"], ""], [3, [9, "facile"], [10, "4×1500 m a ritmo soglia, rec. 90\""], [6, "facile"], [20, "lento"], ""], [3, [8, "facile"], [7, "facile + 4 allunghi"], null, [23, "TEST MEZZA (2 risc + 21,1)"], "Test mezza maratona: l'obiettivo aggiornato è nell'app."], [3, [6, "facile"], [8, "facile"], [5, "facile"], [14, "lento"], "Recupero dopo la mezza."], [3, [9, "facile"], [10, "3×12' a ritmo soglia, rec. 2'"], [6, "facile"], [19, "lento"], ""], [3, [9, "facile"], [10, "6×1000 m a ritmo ripetute, rec. 2'"], [6, "facile"], [20, "lento"], ""], [3, [9, "facile"], [10, "30' progressivo fino a ritmo soglia"], [6, "facile"], [21, "lento"], ""], [4, [7, "facile"], [8, "facile + 6 allunghi"], [5, "facile"], [15, "lento"], "Scarico. Corri prima delle 8."], [4, [8, "facile"], [9, "2×12' soglia a sensazione"], [5, "facile"], [18, "lento"], ""], [4, [8, "facile"], [9, "fartlek 10×1' svelto / 1'30\" piano"], [5, "facile"], [18, "lento"], ""], [4, [8, "facile"], [9, "3×10' soglia a sensazione"], [5, "facile"], [20, "lento"], ""], [4, [7, "facile"], [7, "facile + 4 allunghi"], [4, "facile"], [14, "lento"], "Scarico."], [4, [8, "facile"], [9, "8×45\" in salita, rec. in discesa"], [5, "facile"], [20, "lento"], ""], [5, [8, "facile"], [10, "3×2 km a ritmo gara, rec. 2'"], [5, "facile"], [24, "lento, prova i gel"], ""], [5, [9, "facile"], [10, "4×1500 m a ritmo soglia, rec. 90\""], [5, "facile"], [25, "lento"], ""], [5, [9, "facile"], [12, "8 km continui a ritmo gara"], [6, "facile"], [26, "lento"], ""], [5, [7, "facile"], [8, "facile + 6 allunghi"], [5, "facile"], [20, "lento"], "Scarico."], [5, [9, "facile"], [11, "5×1000 m a ritmo ripetute, rec. 2'"], [6, "facile"], [28, "lento"], ""], [5, [10, "facile"], [12, "2×4 km a ritmo soglia, rec. 3'"], [6, "facile"], [25, "ultimi 12 km a ritmo gara"], ""], [5, [10, "facile"], [13, "10 km continui a ritmo gara"], [6, "facile"], [30, "lento"], ""], [5, [8, "facile"], [8, "facile + 4 allunghi"], null, [23, "TEST MEZZA (2 risc + 21,1)"], "Test mezza: l'obiettivo aggiornato è nell'app. Scarpe e gel di gara."], [5, [9, "facile"], [12, "3×3 km a ritmo soglia, rec. 2'"], [6, "facile"], [32, "lento (max 3h15)"], "Lungo più lungo del piano."], [5, [10, "facile"], [11, "4×1600 m a ritmo soglia, rec. 90\""], [6, "facile"], [26, "ultimi 14 km a ritmo gara"], "Ultima seduta pesante."], [6, [8, "facile"], [10, "6 km a ritmo gara"], [5, "facile"], [22, "lento"], "Ultima palestra con gambe, leggera."], [6, [7, "facile"], [8, "4 km a ritmo gara"], [5, "facile"], [16, "lento"], "Solo core in palestra."], [6, [6, "facile con 3 km a ritmo gara"], [5, "facile + 4 allunghi"], [3, "sabato: 3 km sciolti a NYC"], [42.2, "MARATONA DI NEW YORK"], "Gara domenica 7 novembre. La notte prima negli USA torna l'ora solare: un'ora di sonno in più."]];
 
   var START = '2026-11-16';
   var RACE = '2027-11-07';
@@ -30,6 +30,12 @@
   var DEBUT = 1.04; // prudenza per la prima maratona
   var BASELINE_VDOT = 25.7;
   var RPE_FRAC = { 1: 0.55, 2: 0.6, 3: 0.64, 4: 0.68, 5: 0.72, 6: 0.77, 7: 0.83, 8: 0.88, 9: 0.94, 10: 1 };
+  // Test da sforzo in laboratorio (impostazioni: vo2max, vt1, vt2). Valori personali: stanno solo sul telefono.
+  // VDOT di partenza = 92% del VO2max: il test a rampa da 1' sovrastima le velocità alle soglie.
+  // La curva del piano porta comunque al suo punto d'arrivo (CURVE finale), con un guadagno minimo del 10%.
+  var LAB_FRAC = 0.92, LAB_MIN_GAIN = 0.10;
+  var EASY_FRAC = [0.72, 0.62], EASY_FRAC_LAB = [0.675, 0.6]; // con il test: facile = zone 1-2 del laboratorio
+  var Z2_ABOVE_VT1 = 10; // zona 2 del laboratorio: da VT1 a VT1 + 10 bpm
   var HEALTH = { malattia: 1, dolore: 1 };
 
   /* ---------- date ---------- */
@@ -148,16 +154,32 @@
     return last ? last.vd : BASELINE_VDOT;
   }
 
-  // forma attesa se si segue il piano: punto di partenza personale + progressi del piano, pesati dalla costanza
-  function priorAt(state, ests, date) {
+  /* ---------- test di laboratorio ---------- */
+  function labVdot(settings) { var v = settings && +settings.vo2max; return v >= 15 && v <= 90 ? v * LAB_FRAC : null; }
+  function hrZones(settings) {
+    var vt1 = settings && +settings.vt1, vt2 = settings && +settings.vt2;
+    if (!(vt1 > 80 && vt2 > vt1)) return null;
+    return { vt1: vt1, vt2: vt2, easy: Math.min(vt1 + Z2_ABOVE_VT1, vt2 - 1), T: [vt2 - 8, vt2], I: vt2 + 1 };
+  }
+  // punto di partenza della curva e fattore che riscala i guadagni della curva del piano
+  function startOf(settings, ests) {
+    var lab = labVdot(settings), span = curveAt(51) - curveAt(0);
+    if (lab) return { vd0: lab, k: Math.max(curveAt(51) - lab, lab * LAB_MIN_GAIN) / span, lab: true };
     var vd0 = BASELINE_VDOT;
     for (var i = 0; i < ests.length; i++) { if (ests[i].date < START) { vd0 = ests[i].vd; } }
+    return { vd0: vd0, k: 1, lab: false };
+  }
+  function gainBetween(st, x0, x1) { return (curveAt(x1) - curveAt(x0)) * st.k; }
+
+  // forma attesa se si segue il piano: punto di partenza personale + progressi del piano, pesati dalla costanza
+  function priorAt(state, ests, date) {
+    var st = startOf(state.settings, ests);
     var planned = 0, done = 0;
     BASE.forEach(function (s) { if (s.date < date && s.type !== 'gara') planned += s.baseKm; });
     state.runs.forEach(function (r) { if (r.date >= START && r.date < date) done += r.km || 0; });
     var adh = planned < 5 ? 1 : clamp(done / planned, 0.3, 1);
     var x = diffDays(START, date) / 7;
-    return { vd: vd0 + (curveAt(x) - curveAt(0)) * adh, w: 1.2 };
+    return { vd: st.vd0 + gainBetween(st, 0, x) * adh, w: 1.2 };
   }
 
   // perdita di forma dopo giorni senza correre
@@ -200,6 +222,7 @@
     var ests = [];
     runs.forEach(function (r) { var e = runEstimate(r, settings); if (e) ests.push(e); });
     var vdNow = formAt(state, ests, runs, today);
+    var st0 = startOf(settings, ests), zones = hrZones(settings);
 
     // eventi di cautela (malattia, dolore)
     var events = [];
@@ -239,6 +262,11 @@
         var s = Object.assign({}, b);
         var run = runByKey[s.key], skip = skipByKey[s.key];
         s.adjKm = s.baseKm; s.adjType = s.type; s.adjDesc = s.desc; s.adjDetail = s.detail; s.notes = [];
+        // con il test di laboratorio l'obiettivo dei test segue la curva attesa (arrotondato ai 30")
+        if (st0.lab && s.type === 'test' && s.test) {
+          var vdT = st0.vd0 + gainBetween(st0, 0, diffDays(START, s.date) / 7);
+          s.test = Object.assign({}, s.test, { target: Math.round(predictSec(vdT, s.test.dist) / 30) * 30 });
+        }
         if (run) { s.status = 'done'; s.runId = run.id; }
         else if (skip) { s.status = 'skipped'; s.skipReason = skip.reason; }
         else if (s.date < today) s.status = 'missed';
@@ -297,7 +325,7 @@
     // previsione
     function forecastAt(date, vd) {
       var x = diffDays(START, date) / 7;
-      var gain = Math.max(0, curveAt(51) - curveAt(x));
+      var gain = Math.max(0, gainBetween(st0, x, 51));
       var adh = date < START ? 1 : adherenceAt(state, date);
       var vPlan = vd + gain, vCont = vd + gain * Math.min(1, adh);
       // lunghi della fase specifica (settimane 41-50)
@@ -336,11 +364,12 @@
 
     // ritmi attuali (sec/km)
     var paces = {
-      easy: [paceAtFrac(vdNow, 0.72), paceAtFrac(vdNow, 0.62)],
+      easy: [paceAtFrac(vdNow, (st0.lab ? EASY_FRAC_LAB : EASY_FRAC)[0]), paceAtFrac(vdNow, (st0.lab ? EASY_FRAC_LAB : EASY_FRAC)[1])],
       T: paceAtFrac(vdNow, 0.88),
       I: paceAtFrac(vdNow, 0.975),
       M: [racePace - 9, racePace - 4],
-      raceReal: racePace
+      raceReal: racePace,
+      hr: zones
     };
 
     var pending = sessions.filter(function (s) { return s.status === 'today' || s.status === 'planned'; });
@@ -349,7 +378,7 @@
     var cw = clamp(weekIndexOf(today), 0, 50);
 
     return {
-      today: today, start: START, race: RACE, hrMax: settings.hrMax || null, sessions: sessions, weeks: weeks, ests: ests,
+      today: today, start: START, race: RACE, hrMax: settings.hrMax || null, zones: zones, lab: st0.lab, sessions: sessions, weeks: weeks, ests: ests,
       vdNow: vdNow, paces: paces, forecast: {
         plan: fc.plan, cont: fc.cont, adherence: fc.adherence, status: status, goal: goal,
         realistic: realistic, raceTarget: raceTarget, racePace: racePace
@@ -377,24 +406,26 @@
   function fmtKm(km) { return (Math.round(km * 10) / 10).toString().replace('.', ','); }
 
   function paceHint(s, paces) {
-    var t = s.adjType || s.type, d = s.adjDesc || s.desc;
+    var t = s.adjType || s.type, d = s.adjDesc || s.desc, Z = paces.hr;
     var E = fmtPace(paces.easy[0]) + '–' + fmtPace(paces.easy[1]);
     var M = fmtPace(paces.M[0]) + '–' + fmtPace(paces.M[1]);
     var T = fmtPace(paces.T - 5) + '–' + fmtPace(paces.T + 5);
     var I = fmtPace(paces.I - 5) + '–' + fmtPace(paces.I + 5);
-    if (t === 'facile' && /ritmo gara/.test(d)) return 'Facile ' + E + ', tratto a ritmo gara ' + M;
-    if (t === 'facile' || (t === 'lungo' && !/ritmo gara/.test(d))) return 'Ritmo facile ' + E + ' /km';
-    if (t === 'lungo') return 'Facile ' + E + ', poi ritmo gara ' + M + ' /km';
-    if (t === 'test') return 'Riscaldamento facile, poi a tutta in modo regolare';
+    // con le zone del test la frequenza cardiaca comanda, il ritmo è indicativo
+    var fE = Z ? ' · FC sotto ' + Z.easy : '', fT = Z ? ' · FC ' + Z.T[0] + '–' + Z.T[1] : '', fI = Z ? ' · FC oltre ' + Z.vt2 + ' a fine tratto' : '';
+    if (t === 'facile' && /ritmo gara/.test(d)) return 'Facile ' + E + fE + ', tratto a ritmo gara ' + M;
+    if (t === 'facile' || (t === 'lungo' && !/ritmo gara/.test(d))) return 'Ritmo facile ' + E + ' /km' + fE;
+    if (t === 'lungo') return 'Facile ' + E + fE + ', poi ritmo gara ' + M + ' /km';
+    if (t === 'test') return 'Riscaldamento facile, poi a tutta in modo regolare' + (s.test && s.test.target ? ' · obiettivo ' + fmtTime(s.test.target) : '');
     if (t === 'gara') return 'Ritmo gara ' + M + ' /km sul GPS';
-    if (/soglia/.test(d) && /sensazione/.test(d)) return 'Soglia a sensazione: poche parole possibili';
-    if (/soglia/.test(d)) return 'Tratti a ' + T + ' /km, il resto facile';
-    if (/ripetute/.test(d)) return 'Tratti a ' + I + ' /km, il resto facile';
+    if (/soglia/.test(d) && /sensazione/.test(d)) return 'Soglia a sensazione: poche parole possibili' + fT;
+    if (/soglia/.test(d)) return 'Tratti a ' + T + ' /km' + fT + ', il resto facile';
+    if (/ripetute/.test(d)) return 'Tratti a ' + I + ' /km' + fI + ', il resto facile';
     if (/ritmo gara/.test(d)) return 'Tratti a ' + M + ' /km, il resto facile';
     if (/salita/.test(d)) return 'Salite a sforzo duro, recupero scendendo piano';
     if (/fartlek/.test(d)) return 'Tratti svelti vicino a ' + fmtPace(paces.T) + ' /km';
     if (/progressivo/.test(d)) return 'Da facile fino a circa ' + fmtPace(paces.T + 15) + ' /km';
-    return 'Ritmo facile ' + E + ' /km';
+    return 'Ritmo facile ' + E + ' /km' + fE;
   }
 
   /* ---------- feedback per corsa ---------- */
@@ -418,14 +449,19 @@
     // intensità
     if (type === 'facile' || type === 'lungo') {
       var fast = P.easy[0], slow = P.easy[1];
-      var hard = (run.rpe >= 7) || (run.hr && before.hrMax && run.hr / before.hrMax > 0.82);
-      if (pace < fast - 10) add('warn', 'Troppo veloce per una corsa facile', 'Eri a ' + fmtPace(pace) + ' /km, la tua zona facile oggi è ' + fmtPace(fast) + '–' + fmtPace(slow) + '. Le corse facili costruiscono la base solo se restano facili.');
+      var Z = before.zones;
+      var hrHigh = run.hr > 0 && (Z ? run.hr > Z.easy : (before.hrMax && run.hr / before.hrMax > 0.82));
+      var hard = (run.rpe >= 7) || hrHigh;
+      var hrOk = Z && run.hr > 0 && !hrHigh; // con le zone del test, se la FC è in zona 2 il ritmo va bene
+      if (pace < fast - 10 && !hrOk) add('warn', 'Troppo veloce per una corsa facile', 'Eri a ' + fmtPace(pace) + ' /km, la tua zona facile oggi è ' + fmtPace(fast) + '–' + fmtPace(slow) + '. Le corse facili costruiscono la base solo se restano facili.');
       else if (pace > slow + 40) add('info', 'Molto piano', 'Va benissimo se eri stanco o hai camminato. Conta il tempo sulle gambe.');
-      else add('good', 'Ritmo facile giusto', fmtPace(pace) + ' /km, dentro la zona ' + fmtPace(fast) + '–' + fmtPace(slow) + '.');
+      else if (!hrOk) add('good', 'Ritmo facile giusto', fmtPace(pace) + ' /km, dentro la zona ' + fmtPace(fast) + '–' + fmtPace(slow) + '.');
       if (run.rpe >= 7) add('warn', 'Sforzo alto per una corsa facile', 'Hai dato ' + run.rpe + '/10. Se capita spesso, rallenta o inserisci un minuto di cammino ogni tanto.');
-      else if (run.hr && before.hrMax && run.hr / before.hrMax > 0.82) add('warn', 'Frequenza cardiaca alta', 'Media al ' + Math.round(run.hr / before.hrMax * 100) + '% della massima. Per le facili resta sotto il 78–80%.');
-      if (type === 'lungo' && run.km >= 18) add('info', 'Carboidrati nei lunghi', 'Sopra i 90 minuti prova 30–60 g di carboidrati l\'ora: allena lo stomaco come le gambe.');
-      if (!hard && run.feel === 'good' && pace >= fast - 10) add('good', 'Sensazioni ottime', 'Gambe fresche e ritmo controllato: è la combinazione giusta.');
+      else if (hrHigh && Z) add('warn', 'Frequenza cardiaca alta', 'Media di ' + run.hr + ' bpm, sopra i ' + Z.easy + ' della zona 2 del test. Nelle facili resta sotto: rallenta, anche camminando un minuto ogni tanto. È qui che si allena il consumo di grassi.');
+      else if (hrHigh) add('warn', 'Frequenza cardiaca alta', 'Media al ' + Math.round(run.hr / before.hrMax * 100) + '% della massima. Per le facili resta sotto il 78–80%.');
+      else if (Z && run.hr > 0) add('good', 'Frequenza cardiaca in zona', 'Media di ' + run.hr + ' bpm, sotto i ' + Z.easy + ' della zona 2: allenamento aerobico pieno.');
+      if (type === 'lungo' && run.km >= 18) add('info', 'Carboidrati nei lunghi', 'Sopra i 90 minuti prendi 30–60 g di carboidrati l\'ora, poi sali verso 60–90 nei lunghi della fase specifica: a ritmo gara si bruciano soprattutto zuccheri. Allena lo stomaco come le gambe.');
+      if (!hard && run.feel === 'good' && (pace >= fast - 10 || hrOk)) add('good', 'Sensazioni ottime', 'Gambe fresche e ritmo controllato: è la combinazione giusta.');
     } else if (type === 'qualita') {
       if (!run.rpe) add('info', 'Manca lo sforzo percepito', 'Per i lavori il ritmo medio non dice molto: indica lo sforzo da 1 a 10.');
       else if (run.rpe <= 5) add('info', 'Lavoro forse troppo blando', 'Sforzo ' + run.rpe + '/10. Nei tratti veloci puoi spingere un po\' di più.');

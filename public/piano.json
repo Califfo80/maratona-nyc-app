@@ -267,7 +267,7 @@
    "inizio": "2027-01-04",
    "fine": "2027-01-10",
    "fase": "Base",
-   "nota": "Test 5 km: obiettivo 32:00 o meglio.",
+   "nota": "Test 5 km: l'obiettivo aggiornato è nell'app.",
    "km": 19,
    "sessioni": [
     {
@@ -792,7 +792,7 @@
    "inizio": "2027-03-29",
    "fine": "2027-04-04",
    "fase": "Costruzione",
-   "nota": "Test 10 km: obiettivo 1:02:00 o meglio.",
+   "nota": "Test 10 km: l'obiettivo aggiornato è nell'app.",
    "km": 26,
    "sessioni": [
     {
@@ -1151,7 +1151,7 @@
    "inizio": "2027-05-24",
    "fine": "2027-05-30",
    "fase": "Sviluppo",
-   "nota": "Test mezza maratona: obiettivo 2:12 o meglio.",
+   "nota": "Test mezza maratona: l'obiettivo aggiornato è nell'app.",
    "km": 38,
    "sessioni": [
     {
@@ -1970,7 +1970,7 @@
    "inizio": "2027-09-27",
    "fine": "2027-10-03",
    "fase": "Specifico",
-   "nota": "Test mezza: obiettivo 2:06 o meglio. Scarpe e gel di gara.",
+   "nota": "Test mezza: l'obiettivo aggiornato è nell'app. Scarpe e gel di gara.",
    "km": 39,
    "sessioni": [
     {

@@ -43,3 +43,16 @@ let sk = {id:'s', key:'2-dom', date:'2026-11-29', reason:'impegni'};
 before = E.compute(st([first]), '2026-11-29'); after = E.compute(st([first],[sk]), '2026-11-29');
 console.log('\nSKIP', JSON.stringify(E.feedbackSkip(sk, before, after).items, null, 0));
 console.log('history len', after.history.length);
+
+// 7. con il test da sforzo (valori di esempio: VO2max 32, VT1 137, VT2 168)
+const lab = {goal:16200, hrMax:179, hrRest:60, vo2max:32, vt1:137, vt2:168};
+m = E.compute(st([first], [], lab), '2026-11-21'); show('test da sforzo, inizio', m);
+console.log(' zone', JSON.stringify(m.paces.hr), 'test', m.sessions.filter(s=>s.type==='test').map(s=>s.week+':'+T(s.test.target)).join(' '));
+console.log(' hint facile:', E.paceHint(m.sessions.find(s=>s.key==='2-mar'), m.paces), '| soglia:', E.paceHint(m.sessions.find(s=>s.key==='13-gio'), m.paces), '| test:', E.paceHint(m.sessions.find(s=>s.key==='8-dom'), m.paces));
+let runsL=[first]; E.BASE.filter(s=>s.week<=42).forEach((s,i)=>runsL.push({id:'l'+i,date:s.date,key:s.key,km:s.baseKm,sec:Math.round(s.baseKm*470),hr:s.type==='qualita'?160:142,rpe:s.type==='qualita'?7:4}));
+m = E.compute(st(runsL, [], lab), '2027-09-06'); show('test da sforzo, piano seguito fino a W42', m);
+before = E.compute(st([first], [], lab), '2026-11-24');
+r = {id:'h', date:'2026-11-24', key:'2-mar', km:5, sec:5*450, hr:152, rpe:4, feel:'ok'};
+after = E.compute(st([first, r], [], lab), '2026-11-24'); fb = E.feedbackRun(r, before, after); console.log('\nFB FC alta', fb.score, fb.headline); fb.items.forEach(i=>console.log('  ',i.tone, i.title,'|',i.text));
+r = Object.assign({}, r, {hr:143});
+after = E.compute(st([first, r], [], lab), '2026-11-24'); fb = E.feedbackRun(r, before, after); console.log('FB FC in zona', fb.score, fb.headline); fb.items.forEach(i=>console.log('  ',i.tone, i.title,'|',i.text));
